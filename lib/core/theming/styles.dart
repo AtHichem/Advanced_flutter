@@ -1,0 +1,17 @@
+import 'package:advanced/core/theming/colors_manager.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class TextStyles {
+  static TextStyle font24Black700Weight = TextStyle(
+    fontSize: 24.sp,
+    fontWeight: FontWeight.w700,
+    color: Colors.black,
+  );
+  static TextStyle font32BlueBold = TextStyle(
+    fontSize: 32.sp,
+    fontWeight: FontWeight.bold,
+    color: ColorsManager.mainBlue,
+  );
+}
