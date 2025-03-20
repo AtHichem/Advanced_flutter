@@ -1,7 +1,6 @@
 import 'package:advanced/features/login/ui/login_screen.dart';
 import 'package:advanced/features/onboarding/onboarding_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class AppRouter {
   Route generateRoute(RouteSettings settings) {
@@ -11,7 +10,7 @@ class AppRouter {
       case 'Routes.loginScreen':
         return MaterialPageRoute(builder: (_) => const LoginScreen());
       default:
-        return MaterialPageRoute(builder: (_) => const Placeholder());
+        return MaterialPageRoute(builder: (_) => const OnboardingScreen());
     }
   }
 }
