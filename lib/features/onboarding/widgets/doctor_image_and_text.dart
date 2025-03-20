@@ -1,3 +1,4 @@
+import 'package:advanced/core/theming/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -18,6 +19,16 @@ class DoctorImageAndText extends StatelessWidget {
               end: Alignment.topCenter,
               stops: const [0.14, 0.4],
             ),
+          ),
+        ),
+        Positioned(
+          bottom: 30,
+          left: 0,
+          right: 0,
+          child: Text(
+            'Find the best doctors near you',
+            style: TextStyles.font32BlueBold.copyWith(height: 1.4),
+            textAlign: TextAlign.center,
           ),
         ),
       ],
