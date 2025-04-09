@@ -2,6 +2,8 @@ import 'package:advanced/core/helpers/spacing.dart';
 import 'package:advanced/core/theming/styles.dart';
 import 'package:advanced/core/widgets/app_text_button.dart';
 import 'package:advanced/core/widgets/app_text_form_field.dart';
+import 'package:advanced/features/login/widgets/already_have_account_text.dart';
+import 'package:advanced/features/login/widgets/terms_and_conditions_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -62,11 +64,16 @@ class _LoginScreenState extends State<LoginScreen> {
                           style: TextStyles.font13BlueRegular,
                         ),
                       ),
+                      verticalSpace(40),
                       AppTextButton(
                         buttonText: 'Login',
                         textStyle: TextStyles.font16WhiteSemiMedium,
                         onPressed: () {},
                       ),
+                      verticalSpace(16),
+                      const TermsAndConditionsText(),
+                      verticalSpace(60),
+                      const AlreadyHaveAccountText(),
                     ],
                   ),
                 ),
